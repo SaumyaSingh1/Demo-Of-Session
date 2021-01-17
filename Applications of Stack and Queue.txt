@@ -1,0 +1,91 @@
+What is Stack?
+->Stack is an abstract data type and a data structure that follows LIFO (last in first out) strategy. It means the element added last will be removed first. Stack allows two operations push and pop. Push adds an element at the top of the stack and pop removes an element from top of the stack.
+
+#Some real-world applications of a stack data structure:-
+-To reverse a word. ...
+-An "undo" mechanism in text editors; this operation is accomplished by keeping all text changes in a stack.
+-Language processing.
+-A stack of plates/books in a cupboard.
+-A garage that is only one car wide. ...
+-Wearing/Removing Bangles.
+-Back/Forward stacks on browsers.
+-Support for recursion.
+
+
+APPLICATIONS OF STACK :
+1.Expression Handling −
+       A)  Infix to Postfix or Infix to Prefix Conversion −
+                                The stack can be used to convert some infix expression into its postfix equivalent, or prefix equivalent. These postfix or prefix notations are used in computers to express some                                                       expressions. These expressions are not so much familiar to the infix expression, but they have some great advantages also. We do not need to maintain operator ordering, and parenthesis.
+       B)Postfix or Prefix Evaluation −
+	            After converting into prefix or postfix notations, we have to evaluate the expression to get the result. For that purpose, also we need the help of stack data structure.
+
+2.Backtracking Procedure −
+-Backtracking is one of the algorithm designing technique. For that purpose, we dive into some way, if that way is not efficient, we come back to the previous state and go into some other paths. To get back from current state, we need to store the previous state. For that purpose, we need stack. Some examples of backtracking is finding the solution for Knight Tour problem or N-Queen Problem etc.
+-Another great use of stack is during the function call and return process. When we call a function from one other function, that function call statement may not be the first statement. After calling the function, we also have to come back from the function area to the place, where we have left our control. So we want to resume our task, not restart. For that reason, we store the address of the program counter into the stack, then go to the function body to execute it. After completion of the execution, it pops out the address from stack and assign it into the program counter to resume the task again.
+
+3.Memory Management-
+-Any modern computer environment uses a stack as the primary memory management model for a running program.  Whether it's native code (x86, Sun, VAX) or JVM, a stack is at the center of the run-time environment for Java, C++, Ada, FORTRAN, etc.
+-The discussion of JVM in the text is consistent with older and modern OS such as Windows NT 8 or 10, Solaris, Unix/Linux runtime environments.
+-Each program that is running in a computer system has its own memory allocation containing the typical layout.
+
+4.Parenthesis Checking-
+-Stack is used to check the proper opening and closing of parenthesis.
+
+5.String Reversal-
+-Stack is used to reverse a string. We push the characters of string one by one into stack and then pop character from stack.
+
+6.Function Call-
+-Stack is used to keep information about the active functions or subroutines.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+What is QUEUE?
+->A queue is a linear list of elements in which deletion can take place only at one end, called the FRONT, and insertions can take place only at the other end, called the REAR. These two terms are only used with the queues. Queues are also called First-in First-out (FIFO) lists. 
+
+Some of the real world applications of queues are-
+Cashier line in any store.
+People in an escalator.
+Check in and check out at any book store.
+ 
+
+APPLICATIONS OF QUEUE:
+1.Some of the applications of queues related to computer science are:
+a)Data getting transferred between the IO Buffers (Input Output Buffers).
+b)CPU scheduling and Disk scheduling.
+c)Managing shared resources between various processes.
+d)Job scheduling algorithms.
+e)Round robin scheduling.
+f)Recognizing a palindrome.
+ 
+2.Applications of circular queue:
+-Traffic light functioning is the best example for circular queues. The colors in the traffic light follow a circular pattern.
+-In page replacement algorithms, a circular list of pages is maintained and when a page needs to be replaced, the page in the front of the queue will be chosen.
+ 
+3.Applications of deque:
+-Pallindrome checker.
+-A-steal job scheduling algorithm:
+
+
+     - The A-steal algorithm implements task scheduling for multiple processors (multiprocessor scheduling).
+
+     - The processor gets the first element from the double ended queue.
+
+     - When one of the processors completes execution of its own thread, it can steal a thread from other processors.
+
+     - It gets the last element from the deque of another processor and executes it.
+
+-Undo-redo operations in software applications.
+ 
+4.Applications of Priority Queue:
+-Prim's algorithm implementation can be done using priority queues.
+-Dijkstra's shortest path algorithm implementation can be done using priority queues.
+-A* Search algorithm implementation can be done using priority queues.
+-Priority queues are used to sort heaps.
+-Priority queues are used in operating system for load balancing and interrupt handling.
+-Priority queues are used in huffman codes for data compression.
+-In traffic light, depending upon the traffic, the colors will be given priority.
+
+
+
+
