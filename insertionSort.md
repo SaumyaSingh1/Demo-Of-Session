@@ -104,3 +104,21 @@ int main()
 
 **Uses**: Insertion sort is used when number of elements is small. It can also be useful when input array is almost sorted,  
  only few elements are misplaced in complete big array.  
+
+
+ **What is Binary Insertion Sort?**  
+We can use binary search to reduce the number of comparisons in normal insertion sort. Binary Insertion Sort uses binary  
+search to find the proper location to insert the selected item at each iteration. In normal insertion, sorting takes O(i)  
+(at ith iteration) in worst case. We can reduce it to O(logi) by using binary search. The algorithm, as a whole, still has  
+a running worst case running time of O(n2) because of the series of swaps required for each insertion. Refer this for implementation.  
+ 
+**How to implement Insertion Sort for Linked List?**  
+Below is simple insertion sort algorithm for linked list.  
+
+>1. Create an empty sorted (or result) list  
+>2. Traverse the given list, do following for every node.  
+......a) Insert current node in sorted way in sorted or result list.  
+>3. Change head of given linked list to head of sorted (or result) list.   
+Refer [this](https://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/) for implementation.  
+
+
