@@ -2,7 +2,7 @@ What is Stack?
 ->Stack is an abstract data type and a data structure that follows LIFO (last in first out) strategy. It means the element added last will be removed first. Stack allows two operations push and pop. Push adds an element at the top of the stack and pop removes an element from top of the stack.
 
 #Some real-world applications of a stack data structure:-
--To reverse a word. ...
+-To reverse a word.
 -An "undo" mechanism in text editors; this operation is accomplished by keeping all text changes in a stack.
 -Language processing.
 -A stack of plates/books in a cupboard.
@@ -37,16 +37,16 @@ APPLICATIONS OF STACK :
 6.Function Call-
 -Stack is used to keep information about the active functions or subroutines.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 What is QUEUE?
 ->A queue is a linear list of elements in which deletion can take place only at one end, called the FRONT, and insertions can take place only at the other end, called the REAR. These two terms are only used with the queues. Queues are also called First-in First-out (FIFO) lists. 
 
-Some of the real world applications of queues are-
-Cashier line in any store.
-People in an escalator.
-Check in and check out at any book store.
+#Some of the real world applications of queues are-
+-Cashier line in any store.
+-People in an escalator.
+-Check in and check out at any book store.
  
 
 APPLICATIONS OF QUEUE:
@@ -89,3 +89,19 @@ f)Recognizing a palindrome.
 
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Difference Between Stack and Queue
+
+BASIS FOR COMPARISON		STACK			      QUEUE
+Working principle		LIFO (Last in First out)      FIFO (First in First out)
+
+Number of pointers used		One			      Two
+
+Operations performed		Push and Pop		      Enqueue and dequeue
+
+Check Empty condition		Top == -1		      Front == -1 || Front == Rear + 1
+
+Check full condition		Top == Max - 1		      Rear == Max - 1
+
+Implementation			Simpler			      Comparatively complex
